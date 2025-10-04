@@ -7,7 +7,7 @@
             label = "ext_power";
             #binding-cells = <1>;
             // Set initial power state to off
-            initial-state = <EP_OFF>;
+            initial-state = <0>; // 0 corresponds to EP_OFF
         };
     };
 };
