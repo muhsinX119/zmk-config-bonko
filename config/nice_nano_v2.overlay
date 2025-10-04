@@ -1,7 +1,0 @@
-/* nice_nano_v2.overlay */
-
-/ {
-    chosen {
-        zmk,ext-power-initial-state = <0>; // 0 means OFF
-    };
-};
