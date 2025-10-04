@@ -1,0 +1,13 @@
+/ {
+	chosen {
+		zmk,ext_power_default = <&ext_power EP_OFF>;
+	};
+	
+	behaviors {
+		ext_power: ext_power {
+			compatible = "zmk,behavior-ext-power";
+			label = "ext_power";
+			#binding-cells = <1>;
+		};
+	};
+};
