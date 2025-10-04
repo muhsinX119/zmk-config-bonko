@@ -1,13 +1,7 @@
 /* nice_nano_v2.overlay */
 
 / {
-    behaviors {
-        ext_power: ext_power {
-            compatible = "zmk,behavior-ext-power";
-            label = "ext_power";
-            #binding-cells = <1>;
-            // Set initial power state to off
-            initial-state = <0>; // 0 corresponds to EP_OFF
-        };
+    chosen {
+        zmk,ext-power-initial-state = <0>; // 0 means OFF
     };
 };
