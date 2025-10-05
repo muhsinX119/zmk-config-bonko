@@ -39,7 +39,7 @@
 		k4_to_f4: mod_morph_4 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N3 &kp F4>;
+            bindings = <&kp N3 &kp ALT_F4>;
             mods = <(MOD_LALT)>;
         };
 		k5_to_f5: mod_morph_5 {
