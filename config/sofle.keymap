@@ -18,6 +18,11 @@
 / {
 
 	behaviors {
+		led_toggle: led_toggle {
+            compatible = "zmk,behavior-gpio-toggle";
+            #binding-cells = <0>;
+            gpio = <&gpio0 15 GPIO_ACTIVE_HIGH>;
+        };
 		mo_tog: behavior_mo_tog {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>; // Two binding cells: one for hold layer, one for tap layer
@@ -113,7 +118,7 @@
             bindings = <
 &k1_to_f1 		&k1_to_f1		&k1_to_f1   	&k4_to_f4  			&k1_to_f1    	&k1_to_f1                           &k1_to_f1 	&k1_to_f1    	&k1_to_f1  	&k1_to_f1 	&k1_to_f1    	&k1_to_f1
 &kp TAB 		&kp Q  			&kp W    		&kp E    			&kp R     		&kp T                             	&kp Y  	 	&kp U     		&kp I   	&kp O    		&kp P     		&kp BSLH
-&kp ESC   		&kp A  			&kp S    		&kp D    			&kp F     		&kp G                             	&kp H  	 	&kp J     		&kp K   	&kp L    		&kp SEMI  		&kp SQT
+&kp ESC   		&led_toggle  			&kp S    		&kp D    			&kp F     		&kp G                             	&kp H  	 	&kp J     		&kp K   	&kp L    		&kp SEMI  		&kp SQT
 &kp LSHFT 	 	&kp LALT 	 	&kp Z    		&kp X    			&kp C     		&kp V   &kp DEL  		&kp BSPC  	&kp B  	 	&kp N     		&kp M 		&kp COMMA		&kp DOT   		&mt RSHFT FSLH
 								&kp LGUI 		&mo_tog LOWER LOWER	&mt LCTRL HOME 	&none  	&kp RET     	&kp SPACE 	&kp EQUAL  	&mt RCTRL END	&kp PG_UP 	&lt LOWER PG_DN
             >;
