@@ -24,6 +24,12 @@
             bindings = <&kp GRAVE &kp LA(F1)>;
             mods = <(MOD_LALT)>;
         };
+        k4_to_f4: mod_morph_4 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N3 &kp LA(F4)>;
+            mods = <(MOD_LALT)>;
+        };
 	};
 
     keymap {
@@ -38,7 +44,7 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
-&k1_to_f1 		&k1_to_f1		&k1_to_f1   	&k1_to_f1  	&k1_to_f1    	&k1_to_f1                           &k1_to_f1 	&k1_to_f1    	&k1_to_f1  	&k1_to_f1 	&k1_to_f1    	&k1_to_f1
+&k1_to_f1 		&k1_to_f1		&k1_to_f1   	&k4_to_f4  	&k1_to_f1    	&k1_to_f1                           &k1_to_f1 	&k1_to_f1    	&k1_to_f1  	&k1_to_f1 	&k1_to_f1    	&k1_to_f1
 &kp TAB 		&kp Q  			&kp W    		&kp E    	&kp R     		&kp T                             	&kp Y  	 	&kp U     		&kp I   	&kp O    		&kp P     		&kp BSLH
 &kp ESC   		&kp A  			&kp S    		&kp D    	&kp F     		&kp G                             	&kp H  	 	&kp J     		&kp K   	&kp L    		&kp SEMI  		&kp SQT
 &kp LSHFT 	 	&kp LALT 	 	&kp Z    		&kp X    	&kp C     		&kp V   &kp DEL  		&kp BSPC  	&kp B  	 	&kp N     		&kp M 		&kp COMMA		&kp DOT   		&mt RSHFT FSLH
