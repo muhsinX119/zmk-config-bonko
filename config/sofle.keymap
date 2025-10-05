@@ -21,67 +21,72 @@
         k1_to_f1: mod_morph_1 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp F1>;
+            bindings = <&kp GRAVE &kp LA(F1)>;
             mods = <(MOD_LALT)>;
         };
 		k2_to_f2: mod_morph_2 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp F2>;
+            bindings = <&kp N1 &kp LA(F2)>;
             mods = <(MOD_LALT)>;
         };
 		k3_to_f3: mod_morph_3 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N2 &kp F3>;
+            bindings = <&kp N2 &kp LA(F3)>;
+            mods = <(MOD_LALT)>;
+		k4_to_f4: mod_morph_4 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N3 &kp LA(F4)>;
             mods = <(MOD_LALT)>;
         };
 		k5_to_f5: mod_morph_5 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N4 &kp F5>;
+            bindings = <&kp N4 &kp LA(F5)>;
             mods = <(MOD_LALT)>;
         };
 		k6_to_f6: mod_morph_6 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N5 &kp F6>;
+            bindings = <&kp N5 &kp LA(F6)>;
             mods = <(MOD_LALT)>;
         };
 		k7_to_f7: mod_morph_7 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N6 &kp F7>;
+            bindings = <&kp N6 &kp LA(F7)>;
             mods = <(MOD_LALT)>;
         };
 		k8_to_f8: mod_morph_8 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N7 &kp F8>;
+            bindings = <&kp N7 &kp LA(F8)>;
             mods = <(MOD_LALT)>;
         };
 		k9_to_f9: mod_morph_9 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N8 &kp F9>;
+            bindings = <&kp N8 &kp LA(F9)>;
             mods = <(MOD_LALT)>;
         };
 		k10_to_f10: mod_morph_10 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N9 &kp F10>;
+            bindings = <&kp N9 &kp LA(F10)>;
             mods = <(MOD_LALT)>;
         };
 		k11_to_f11: mod_morph_11 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N0 &kp F11>;
+            bindings = <&kp N0 &kp LA(F11)>;
             mods = <(MOD_LALT)>;
         };
 		k12_to_f12: mod_morph_12 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp MINUS &kp F12>;
+            bindings = <&kp MINUS &kp LA(F12)>;
             mods = <(MOD_LALT)>;
         };
 	};
@@ -98,7 +103,7 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
-&k1_to_f1 		&k2_to_f2		&k3_to_f3   	&kp LA(F4)  	&k5_to_f5    	&k6_to_f6                           &k7_to_f7 	&k8_to_f8    	&k9_to_f9  	&k10_to_f10 	&k11_to_f11    	&k12_to_f12
+&k1_to_f1 		&k2_to_f2		&k3_to_f3   	&k4_to_f4  	&k5_to_f5    	&k6_to_f6                           &k7_to_f7 	&k8_to_f8    	&k9_to_f9  	&k10_to_f10 	&k11_to_f11    	&k12_to_f12
 &kp TAB 		&kp Q  			&kp W    		&kp E    	&kp R     		&kp T                             	&kp Y  	 	&kp U     		&kp I   	&kp O    		&kp P     		&kp BSLH
 &kp ESC   		&kp A  			&kp S    		&kp D    	&kp F     		&kp G                             	&kp H  	 	&kp J     		&kp K   	&kp L    		&kp SEMI  		&kp SQT
 &kp LSHFT 	 	&kp LALT 	 	&kp Z    		&kp X    	&kp C     		&kp V   &kp DEL  		&kp BSPC  	&kp B  	 	&kp N     		&kp M 		&kp COMMA		&kp DOT   		&mt RSHFT FSLH
