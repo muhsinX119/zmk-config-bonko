@@ -1,3 +1,0 @@
-&blue_led {
-    status = "okay";          // ← Tells ZMK "don't control this LED"
-};
