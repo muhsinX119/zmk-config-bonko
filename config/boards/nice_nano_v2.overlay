@@ -1,5 +1,1 @@
-/ {
-    leds {
-        /delete-node/ led_0;
-    };
-};
+this is a test
