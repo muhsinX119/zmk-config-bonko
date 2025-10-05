@@ -1,0 +1,10 @@
+/ {
+	leds {
+		compatible = "gpio-leds";
+		status = "disabled";
+	};
+};
+
+&p0_15 {
+	status = "disabled";
+};
