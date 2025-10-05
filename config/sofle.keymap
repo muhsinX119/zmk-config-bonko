@@ -36,12 +36,12 @@
             bindings = <&kp N2 &kp F3>;
             mods = <(MOD_LALT)>;
         };
-		k4_to_f4: mod_morph_4 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp N3 &kp LALT_F4>;
-            mods = <(MOD_LALT)>;
-        };
+		#k4_to_f4: mod_morph_4 {
+        #    compatible = "zmk,behavior-mod-morph";
+        #    #binding-cells = <0>;
+        #    bindings = <&kp N3 &kp LALT_F4>;
+        #    mods = <(MOD_LALT)>;
+        #};
 		k5_to_f5: mod_morph_5 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
