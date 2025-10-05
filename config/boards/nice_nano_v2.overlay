@@ -1,1 +1,4 @@
-this is a test
+&blue_led {
+    default-state = "on";
+    retain-state-shutdown;
+};
