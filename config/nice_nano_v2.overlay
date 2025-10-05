@@ -1,16 +1,8 @@
-/ {
-	leds {
-		compatible = "gpio-leds";
-		status = "disabled";
-	};
-};
-
 &pinctrl {
-    my_pinctrl_disabled: my_pinctrl_disabled {
-        group {
-            psels = <NRF_PSEL_DISCONNECTED(GPIO_PORT_0, 15)>;
+    p0_15_disabled: p0_15_disabled {
+        group1 {
+            psels = <NRF_PSEL(GPIO, 0, 15)>;
             bias-disable;
         };
     };
 };
-
