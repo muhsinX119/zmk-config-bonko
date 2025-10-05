@@ -4,3 +4,12 @@
 		status = "disabled";
 	};
 };
+
+&pinctrl {
+    my_pinctrl_disabled: my_pinctrl_disabled {
+        group {
+            psels = <NRF_PSEL(GPIO_PORT_0, 15)>;
+            bias-disable;
+        };
+    };
+};
