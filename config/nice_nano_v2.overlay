@@ -5,6 +5,6 @@
 	};
 };
 
-&p0_15 {
+&led0 {
 	status = "disabled";
 };
