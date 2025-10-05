@@ -17,6 +17,10 @@
 
 / {
 
+	&blue_led {
+    status = "disabled";
+	};
+
 	behaviors {
 		mo_tog: behavior_mo_tog {
             compatible = "zmk,behavior-hold-tap";
