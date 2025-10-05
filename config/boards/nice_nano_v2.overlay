@@ -1,4 +1,11 @@
+&gpio0 {
+    p15-hog {
+        gpio-hog;
+        gpios = <15 GPIO_ACTIVE_HIGH>;
+        output-high;              // ← Forces pin HIGH at boot
+    };
+};
+
 &blue_led {
-    default-state = "on";
-    retain-state-shutdown;
+    status = "disabled";          // ← Tells ZMK "don't control this LED"
 };
