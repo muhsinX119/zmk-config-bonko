@@ -15,6 +15,10 @@
 #define RAISE 2
 #define ADJUST 3
 
+&blue_led {
+    gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>;  // Point to unused pin
+};
+
 / {
 
 	behaviors {
