@@ -1,0 +1,5 @@
+/ {
+    leds {
+        /delete-node/ led_0;
+    };
+};
