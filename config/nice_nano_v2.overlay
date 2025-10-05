@@ -4,7 +4,3 @@
 		status = "disabled";
 	};
 };
-
-&led0 {
-	status = "disabled";
-};
