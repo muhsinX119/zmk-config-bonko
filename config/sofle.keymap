@@ -17,31 +17,6 @@
 
 / {
 
-	key_overrides {
-		compatible = "zmk,key-overrides";
-		
-		override_ctrlshift_i {
-			bindings = <&kp LC(LS(UP))>;
-			when-held-mods = <(MOD_LCTRL|MOD_LSFT)>;
-			match = <&kp I>;
-		};
-		override_ctrlshift_j {
-			bindings = <&kp LC(LS(LEFT))>;
-			when-held-mods = <(MOD_LCTRL|MOD_LSFT)>;
-			match = <&kp J>;
-		};
-		override_ctrlshift_k {
-			bindings = <&kp LC(LS(DOWN))>;
-			when-held-mods = <(MOD_LCTRL|MOD_LSFT)>;
-			match = <&kp K>;
-		};
-		override_ctrlshift_l {
-			bindings = <&kp LC(LS(RIGHT))>;
-			when-held-mods = <(MOD_LCTRL|MOD_LSFT)>;
-			match = <&kp L>;
-		};
-	};
-
 	behaviors {
 		ctrlshift_i_helper: modify_i_helper {
             compatible = "zmk,behavior-mod-morph";
