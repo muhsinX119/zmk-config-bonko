@@ -36,13 +36,13 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp J &kp LC(LS(LEFT))>;
-            mods = <(MOD_LSHFT)>;
+            mods = <(MOD_LSFT)>;
         };
 		ctrlshift_j: modify_j {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp J &ctrlshift_j_helper>;
-            mods = <(MOD_LCTRL)>;
+            mods = <(MOD_LCTL)>;
         };
 		ctrlshift_k_helper: modify_k_helper {
             compatible = "zmk,behavior-mod-morph";
@@ -62,13 +62,13 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp L &kp LC(LS(RIGHT))>;
-            mods = <(MOD_LSHFT)>;
+            mods = <(MOD_LSFT)>;
         };
 		ctrlshift_l: modify_l {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp L &ctrlshift_l_helper>;
-            mods = <(MOD_LCTRL)>;
+            mods = <(MOD_LCTL)>;
         };
 		mo_tog: behavior_mo_tog {
             compatible = "zmk,behavior-hold-tap";
