@@ -35,16 +35,14 @@
 		ctrlshift_j_helper: modify_j_helper {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp J>, <&kp LEFT>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
+            bindings = <&kp J &kp LC(LS(LEFT))>;
+            mods = <(MOD_LSHFT)>;
         };
 		ctrlshift_j: modify_j {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp J>, <&ctrlshift_j_helper>;
-            mods = <(MOD_LCTL)>;
-            keep-mods = <(MOD_LCTL)>;
+            bindings = <&kp J &ctrlshift_j_helper>;
+            mods = <(MOD_LCTRL)>;
         };
 		ctrlshift_k_helper: modify_k_helper {
             compatible = "zmk,behavior-mod-morph";
@@ -63,16 +61,14 @@
 		ctrlshift_l_helper: modify_l_helper {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp L>, <&kp RIGHT>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
+            bindings = <&kp L &kp LC(LS(RIGHT))>;
+            mods = <(MOD_LSHFT)>;
         };
 		ctrlshift_l: modify_l {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp L>, <&ctrlshift_l_helper>;
-            mods = <(MOD_LCTL)>;
-            keep-mods = <(MOD_LCTL)>;
+            bindings = <&kp L &ctrlshift_l_helper>;
+            mods = <(MOD_LCTRL)>;
         };
 		mo_tog: behavior_mo_tog {
             compatible = "zmk,behavior-hold-tap";
