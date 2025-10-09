@@ -18,6 +18,12 @@
 / {
 
 	behaviors {
+	    k13_to_f13: mod_morph_13 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp LA(F1)>;
+            mods = <(MOD_LALT)>;
+        };
 		ctrlshift_i_helper: modify_i_helper {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -29,8 +35,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp I &ctrlshift_i_helper>;
-            mods = <(MOD_LCTRL)>;
-            keep-mods = <(MOD_LCTRL)>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
         };
 		ctrlshift_j_helper: modify_j_helper {
             compatible = "zmk,behavior-mod-morph";
