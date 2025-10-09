@@ -22,14 +22,14 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp UP>;
-            mods = <(MOD_LSFT)>;
+            mods = <MOD_LSFT>;
             keep-mods = <(MOD_LSFT)>;
         };
 		ctrlshift_i: modify_i {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp I>, <&ctrlshift_i_helper>;
-            mods = <(MOD_LCTRL)>;
+            mods = <MOD_LCTRL>;
             keep-mods = <(MOD_LCTRL)>;
         };
 		ctrlshift_j_helper: modify_j_helper {
