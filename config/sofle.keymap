@@ -18,23 +18,17 @@
 / {
 
 	behaviors {
-	    k13_to_f13: mod_morph_13 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp LA(F1)>;
-            mods = <(MOD_LALT)>;
-        };
 		ctrlshift_i_helper: modify_i_helper {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp I &kp UP>;
+            bindings = <&kp I>, <&kp UP>;
             mods = <(MOD_LSFT)>;
             keep-mods = <(MOD_LSFT)>;
         };
 		ctrlshift_i: modify_i {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp I &ctrlshift_i_helper>;
+            bindings = <&kp I>, <&ctrlshift_i_helper>;
             mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LCTL)>;
         };
@@ -49,8 +43,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp J>, <&ctrlshift_j_helper>;
-            mods = <(MOD_LCTRL)>;
-            keep-mods = <(MOD_LCTRL)>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
         };
 		ctrlshift_k_helper: modify_k_helper {
             compatible = "zmk,behavior-mod-morph";
@@ -63,8 +57,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp K>, <&ctrlshift_k_helper>;
-            mods = <(MOD_LCTRL)>;
-            keep-mods = <(MOD_LCTRL)>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
         };
 		ctrlshift_l_helper: modify_l_helper {
             compatible = "zmk,behavior-mod-morph";
@@ -77,8 +71,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp L>, <&ctrlshift_l_helper>;
-            mods = <(MOD_LCTRL)>;
-            keep-mods = <(MOD_LCTRL)>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
         };
 		mo_tog: behavior_mo_tog {
             compatible = "zmk,behavior-hold-tap";
