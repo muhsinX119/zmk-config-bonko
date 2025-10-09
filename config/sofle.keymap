@@ -43,6 +43,62 @@
 	};
 
 	behaviors {
+		ctrlshift_i_helper: modify_i_helper {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&kp UP>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+		ctrlshift_i: modify_i {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&ctrlshift_i_helper>;
+            mods = <(MOD_LCTRL)>;
+            keep-mods = <(MOD_LCTRL)>;
+        };
+		ctrlshift_j_helper: modify_j_helper {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&kp LEFT>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+		ctrlshift_j: modify_j {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&ctrlshift_j_helper>;
+            mods = <(MOD_LCTRL)>;
+            keep-mods = <(MOD_LCTRL)>;
+        };
+		ctrlshift_k_helper: modify_k_helper {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp K>, <&kp DOWN>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+		ctrlshift_k: modify_k {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp K>, <&ctrlshift_k_helper>;
+            mods = <(MOD_LCTRL)>;
+            keep-mods = <(MOD_LCTRL)>;
+        };
+		ctrlshift_l_helper: modify_l_helper {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&kp RIGHT>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+		ctrlshift_l: modify_l {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&ctrlshift_l_helper>;
+            mods = <(MOD_LCTRL)>;
+            keep-mods = <(MOD_LCTRL)>;
+        };
 		mo_tog: behavior_mo_tog {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>; // Two binding cells: one for hold layer, one for tap layer
