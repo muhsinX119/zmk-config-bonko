@@ -22,7 +22,7 @@
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
 			bindings = <&kp I>, <&kp UP>;
-			mods = <(MOD_LSFT);
+			mods = <(MOD_LSFT)>;
 			keep-mods = <(MOD_LSFT)>;
 		};
 		mm_i: modmorph_i {
