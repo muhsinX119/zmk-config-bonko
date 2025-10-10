@@ -21,7 +21,7 @@
 		mm_i_shift: modmorph_i_shift {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&kp I>, <&mo LOWER>;
+			bindings = <&kp I>, <&kp UP>;
 			mods = <(MOD_LSFT)>;
 			keep-mods = <(MOD_LSFT)>;
 		};
@@ -29,6 +29,48 @@
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
 			bindings = <&kp I>, <&mm_i_shift>;
+			mods = <(MOD_LCTL|MOD_LALT)>;
+			keep-mods = <(MOD_LCTL|MOD_LALT)>;
+		};
+		mm_j_shift: modmorph_j_shift {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp J>, <&kp LEFT>;
+			mods = <(MOD_LSFT)>;
+			keep-mods = <(MOD_LSFT)>;
+		};
+		mm_j: modmorph_j {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp J>, <&mm_j_shift>;
+			mods = <(MOD_LCTL|MOD_LALT)>;
+			keep-mods = <(MOD_LCTL|MOD_LALT)>;
+		};
+		mm_k_shift: modmorph_k_shift {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp K>, <&kp DOWN>;
+			mods = <(MOD_LSFT)>;
+			keep-mods = <(MOD_LSFT)>;
+		};
+		mm_k: modmorph_k {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp K>, <&mm_k_shift>;
+			mods = <(MOD_LCTL|MOD_LALT)>;
+			keep-mods = <(MOD_LCTL|MOD_LALT)>;
+		};
+		mm_l_shift: modmorph_l_shift {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp L>, <&kp RIGHT>;
+			mods = <(MOD_LSFT)>;
+			keep-mods = <(MOD_LSFT)>;
+		};
+		mm_l: modmorph_l {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp L>, <&mm_l_shift>;
 			mods = <(MOD_LCTL|MOD_LALT)>;
 			keep-mods = <(MOD_LCTL|MOD_LALT)>;
 		};
