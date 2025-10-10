@@ -21,7 +21,7 @@
 		mm_i_shift: modmorph_i_shift {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&kp I>, <&kp UP>;
+			bindings = <&kp I>, <&mo LOWER>;
 			mods = <(MOD_LSFT)>;
 			keep-mods = <(MOD_LSFT)>;
 		};
@@ -29,8 +29,8 @@
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
 			bindings = <&kp I>, <&mm_i_shift>;
-			mods = <(MOD_LCTL)>;
-			keep-mods = <(MOD_LCTL)>;
+			mods = <(MOD_LCTL|MOD_LALT)>;
+			keep-mods = <(MOD_LCTL|MOD_LALT)>;
 		};
 		mo_tog: behavior_mo_tog {
             compatible = "zmk,behavior-hold-tap";
@@ -148,8 +148,8 @@
 &kp F1    &kp F2    &kp F3    	&kp F4    		&kp F5    &kp F6                    			&kp F7   	&kp F8    	&kp F9    	&kp F10   	&kp F11   &kp F12
 &kp GRAVE &kp N1    &kp N2    	&kp N3      	&kp N4    &kp N5                    			&kp N6    	&kp N7   	&kp UP    	&kp N9    	&kp LBKT    &kp RBKT
 &bt BT_CLR    &bt BT_CLR_ALL  &kp AT    	&kp N3    	&kp N4  &kp PRCNT                 			&kp CARET 	&kp LEFT 	&kp DOWN 	&kp RIGHT  	&kp RPAR  &kp PIPE
-&trans    &kp LALT	&kp MINUS 	&kp PLUS 		&kp LBRC  &kp RBRC  	&bt BT_SEL 1 	&bt BT_SEL 2  &kp LBKT  	&kp RBKT 	&kp SEMI  	&kp COLON 	&kp BSLH  &trans
-                    &trans    	&trans      	&trans    &trans     	&trans 	&trans	  	&trans    	&trans   	&trans    	&trans
+&kp LSHFT    &kp LALT	&kp MINUS 	&kp PLUS 		&kp LBRC  &kp RBRC  	&bt BT_SEL 1 	&bt BT_SEL 2  &kp LBKT  	&kp RBKT 	&kp SEMI  	&kp COLON 	&kp BSLH  &trans
+                    &trans    	&trans      	&kp LCTRL    &trans     	&trans 	&trans	  	&trans    	&trans   	&trans    	&trans
             >;
 
             //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
