@@ -31,7 +31,7 @@
 			bindings = <&kp I>, <&mm_i_shift>;
 			mods = <(MOD_LCTL)>;
 			keep-mods = <(MOD_LCTL)>;
-		}
+		};
 		mo_tog: behavior_mo_tog {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>; // Two binding cells: one for hold layer, one for tap layer
