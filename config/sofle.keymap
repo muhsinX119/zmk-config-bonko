@@ -170,7 +170,7 @@
 &k1_to_f1 		&k2_to_f2		&k3_to_f3   	&k4_to_f4  			&k5_to_f5    	&k6_to_f6                           &k7_to_f7 	&k8_to_f8    	&k9_to_f9  	&k10_to_f10 	&k11_to_f11    	&k12_to_f12
 &kp TAB 		&kp Q  			&kp W    		&kp E    			&kp R     		&kp T                             	&kp Y  	 	&kp U     		&mm_i   	&kp O    		&kp P     		&kp BSLH
 &kp ESC   		&kp A  			&kp S    		&kp D    			&kp F     		&kp G                             	&kp H  	 	&mm_j     		&mm_k   	&mm_l    		&kp SEMI  		&kp SQT
-&kp CAPS 	 	&kp LSHFT	 	&kp Z    		&kp X    			&kp C     		&kp V   &kp DEL  		&kp BSPC  	&kp B  	 	&kp N     		&kp M 		&kp COMMA		&kp DOT   		&mt RSHFT FSLH
+&kp LSHFT 	 	&kp K_CMENU	 	&kp Z    		&kp X    			&kp C     		&kp V   &kp DEL  		&kp BSPC  	&kp B  	 	&kp N     		&kp M 		&kp COMMA		&kp DOT   		&mt RSHFT FSLH
 								&kp LGUI 		&mo_tog LOWER LOWER	&mt LCTRL HOME 	&kp LALT  	&kp RET     	&kp SPACE 	&kp EQUAL  	&mt RCTRL END	&kp PG_UP 	&lt LOWER PG_DN
             >;
 
